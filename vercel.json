@@ -1,9 +1,5 @@
+
 {
-  "functions": {
-    "api/booking.js": {
-      "maxDuration": 10
-    }
-  },
   "headers": [
     {
       "source": "/admin.html",
