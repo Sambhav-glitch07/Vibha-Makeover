@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7f0e7">
+<meta name="description" content="Makeup tutorials, bridal transformations and beauty highlights from Vibha MUA.">
+<link rel="icon" type="image/png" href="/vibha-makeover-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<title>YouTube Highlights | Vibha Makeover</title>
+<style>
+:root{--ivory:#f7f0e7;--paper:#fffaf4;--wine:#5a1e31;--wine2:#7a3549;--ink:#241b1c;--muted:#746663;--line:#ded0c4;--gold:#b79a73}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.serif{font-family:"Playfair Display",Georgia,serif;font-weight:400;letter-spacing:-.035em}.italic{font-style:italic;color:var(--wine2)}.eyebrow{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--wine2);font-weight:700}
+header{position:sticky;top:0;z-index:10;background:rgba(247,240,231,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{display:block;width:116px;height:62px;object-fit:contain;mix-blend-mode:multiply}.navlinks{display:flex;align-items:center;gap:25px;font-size:.78rem;color:#4e4140}.navlinks a:hover,.navlinks .active{color:var(--wine2)}.navlinks .active{border-bottom:1px solid var(--gold);padding-bottom:5px}.button{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;background:var(--wine);color:var(--paper);font-size:.75rem;font-weight:700;letter-spacing:.04em;border:1px solid var(--wine)}.button:hover{background:#48202b}.button.light{background:transparent;color:var(--wine)}.button.light:hover{background:var(--wine);color:var(--paper)}.menu-btn{display:none;background:var(--paper);border:1px solid var(--line);width:44px;height:44px;align-items:center;justify-content:center;flex-direction:column;gap:6px}.menu-btn span{display:block;width:19px;height:1px;background:var(--wine)}
+.hero{padding:74px 0 58px;text-align:center}.hero .eyebrow{margin-bottom:18px}.hero h1{font-size:clamp(3rem,7vw,5.7rem);line-height:1.02;margin:0 auto 20px}.hero p{max-width:580px;margin:0 auto;color:var(--muted);font-size:.92rem;line-height:1.9}.hero-actions{margin-top:25px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.channel-strip{background:#321d23;color:var(--ivory);padding:22px 0}.channel-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.channel-inner p{margin:5px 0 0;font-size:.78rem;color:#d4bfc0}.channel-name{font:1.45rem "Playfair Display",serif}.channel-name span{color:#d8b28a;font-style:italic}
+.videos{padding:76px 0 96px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:30px}.section-head h2{font-size:clamp(2.2rem,4vw,3.5rem);margin:10px 0 0}.section-head p{max-width:370px;color:var(--muted);font-size:.82rem;line-height:1.8}.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.video-card{min-width:0;background:var(--paper);border:1px solid var(--line)}.video-frame{aspect-ratio:16/9;background:#eadfd5;overflow:hidden}.video-frame iframe{display:block;width:100%;height:100%;border:0}.video-copy{padding:17px 18px 19px}.video-copy h3{font:1.35rem "Playfair Display",serif;margin:0 0 8px}.video-copy p{font-size:.76rem;line-height:1.7;color:var(--muted);margin:0 0 13px}.watch-link{font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--wine);border-bottom:1px solid var(--gold);padding-bottom:4px}.empty-state{grid-column:1/-1;padding:38px;border:1px solid var(--line);background:var(--paper);text-align:center;color:var(--muted);line-height:1.8}.empty-state strong{color:var(--wine)}.note{margin-top:22px;color:var(--muted);font-size:.72rem;line-height:1.7}
+footer{background:#321d23;color:#f7f1e9;padding:28px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-brand{font:1.25rem "Playfair Display",serif}.footer-brand span{color:#d8b28a;font-style:italic}.footer-small{font-size:.68rem;color:#d4bfc0;line-height:1.7}.footer-links{display:flex;gap:18px;font-size:.74rem;color:#e6d6d1}.footer-links a:hover{color:#fff}
+@media(max-width:760px){.wrap{width:min(100% - 30px,560px)}.nav{min-height:68px}.brand img{width:102px;height:56px}.menu-btn{display:flex;flex:0 0 44px}.navlinks{display:none;position:absolute;top:100%;left:0;right:0;padding:8px 22px 20px;background:rgba(255,250,244,.99);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;box-shadow:0 20px 35px #321d2318}.navlinks.open{display:flex}.navlinks a{padding:14px 0;border-bottom:1px solid var(--line)}.navlinks a:last-child{border-bottom:0}.hero{padding:54px 0 45px}.hero h1{font-size:clamp(2.8rem,13vw,4.4rem)}.channel-inner{align-items:flex-start;flex-direction:column}.videos{padding:58px 0 70px}.section-head{display:block}.section-head p{margin-top:13px}.video-grid{grid-template-columns:1fr;gap:16px}.video-copy{padding:16px}.footer-inner{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="/" aria-label="Vibha Makeover homepage"><img src="/vibha-makeover-logo.png" alt="Vibha Makeover"></a>
+<button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+<nav class="navlinks" id="navLinks" aria-label="Main navigation">
+<a href="/">Home</a><a href="/gallery.html">Gallery</a><a href="/youtube.html" class="active" aria-current="page">YouTube Highlights</a><a href="/beautyai.html">Beauty AI</a><a href="/#booking">Bookings</a>
+</nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="eyebrow">Beauty, in motion</div><h1 class="serif">Watch the <span class="italic">transformation.</span></h1><p>Explore makeup moments, bridal looks, hairstyling and beauty highlights from Vibha MUA. New videos can be added here whenever you’re ready.</p><div class="hero-actions"><a class="button" href="https://www.youtube.com/@vibhamua" target="_blank" rel="noopener noreferrer">Visit @vibhamua on YouTube</a><a class="button light" href="/">Back to Vibha Makeover</a></div></div></section>
+<section class="channel-strip"><div class="wrap channel-inner"><div><div class="eyebrow" style="color:#d8b28a">The official channel</div><div class="channel-name">Vibha <span>MUA</span></div><p>Makeup artistry · Bridal beauty · Hair inspiration</p></div><a class="button light" href="https://www.youtube.com/@vibhamua" target="_blank" rel="noopener noreferrer">Open YouTube channel</a></div></section>
+<section class="videos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Selected videos</div><h2 class="serif">YouTube <span class="italic">highlights.</span></h2></div><p>Add your YouTube video links in the small list inside this page’s script. Each video will appear here in a matching card.</p></div><div class="video-grid" id="videoGrid" aria-live="polite"></div><p class="note">Use standard YouTube links, youtu.be links, or YouTube Shorts links. Videos are embedded from YouTube; this page does not upload or store video files.</p></div></section>
+</main>
+<footer><div class="wrap footer-inner"><div><div class="footer-brand">VIBHA <span>Makeover</span></div><div class="footer-small">Beauty, thoughtfully expressed · Patna, Bihar</div></div><div class="footer-links"><a href="/">Home</a><a href="/gallery.html">Gallery</a><a href="/#booking">Bookings</a><a href="https://www.youtube.com/@vibhamua" target="_blank" rel="noopener noreferrer">@vibhamua</a></div><div class="footer-small">Made with love, for every beautiful moment.</div></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{const open=!navLinks.classList.contains('open');navLinks.classList.toggle('open',open);menuBtn.setAttribute('aria-expanded',String(open));menuBtn.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.setAttribute('aria-label','Open navigation')}));
+
+/* ADD YOUR VIDEO LINKS HERE. Example:
+{title:"Bridal Makeup Transformation",description:"A bridal look by Vibha MUA.",url:"https://www.youtube.com/watch?v=VIDEO_ID"}
+*/
+const videos=[
+  {
+    title: "Bridal Makeup Transformation",
+    description: "A beautiful bridal look by Vibha MUA.",
+    url: "https://youtube.com/shorts/ILBnpgmQ0-8?si=JupitIXt30yzishM"
+  },
+  {
+    title: "Party Makeup Look",
+    description: "An elegant occasion makeup look.",
+    url: "https://youtube.com/shorts/T-43PUwGaH0?si=ZfFfEJIjcAY8lsQw"
+  }
+];
+function getYouTubeId(raw){try{const u=new URL(raw);const host=u.hostname.replace(/^www\./,'').replace(/^m\./,'');if(host==='youtu.be')return u.pathname.split('/').filter(Boolean)[0]||null;if(host.endsWith('youtube.com')){if(u.pathname==='/watch')return u.searchParams.get('v');const p=u.pathname.split('/').filter(Boolean);if(['shorts','embed','live'].includes(p[0]))return p[1]||null}}catch(e){}return null}
+const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const grid=document.getElementById('videoGrid');
+const valid=videos.map(v=>({...v,id:getYouTubeId(v.url||'')})).filter(v=>v.id);
+if(!valid.length){grid.innerHTML='<div class="empty-state"><strong>Your highlights will appear here.</strong><br>Add video titles and YouTube links to the <code>videos</code> list in this page’s script.</div>'}
+else{grid.innerHTML=valid.map((v,i)=>{const id=encodeURIComponent(v.id),title=esc(v.title||`Vibha MUA video ${i+1}`),desc=esc(v.description||'A beauty highlight from Vibha MUA.');return `<article class="video-card"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-copy"><h3>${title}</h3><p>${desc}</p><a class="watch-link" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></div></article>`}).join('')}
+</script>
+</body>
+</html>
