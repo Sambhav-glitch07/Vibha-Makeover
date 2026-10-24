@@ -31,7 +31,7 @@ footer{background:#321d23;color:#f7f1e9;padding:28px 0}.footer-inner{display:fle
 <main>
 <section class="hero"><div class="wrap"><div class="eyebrow">Beauty, in motion</div><h1 class="serif">Watch the <span class="italic">transformation.</span></h1><p>Explore makeup moments, bridal looks, hairstyling and beauty highlights from Vibha MUA. New videos can be added here whenever you’re ready.</p><div class="hero-actions"><a class="button" href="https://www.youtube.com/@vibhamua" target="_blank" rel="noopener noreferrer">Visit @vibhamua on YouTube</a><a class="button light" href="/">Back to Vibha Makeover</a></div></div></section>
 <section class="channel-strip"><div class="wrap channel-inner"><div><div class="eyebrow" style="color:#d8b28a">The official channel</div><div class="channel-name">Vibha <span>MUA</span></div><p>Makeup artistry · Bridal beauty · Hair inspiration</p></div><a class="button light" href="https://www.youtube.com/@vibhamua" target="_blank" rel="noopener noreferrer">Open YouTube channel</a></div></section>
-<section class="videos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Selected videos</div><h2 class="serif">YouTube <span class="italic">highlights.</span></h2></div><p>Add your YouTube video links in the small list inside this page’s script. Each video will appear here in a matching card.</p></div><div class="video-grid" id="videoGrid" aria-live="polite"></div><p class="note">Use standard YouTube links, youtu.be links, or YouTube Shorts links. Videos are embedded from YouTube; this page does not upload or store video files.</p></div></section>
+<section class="videos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Selected videos</div><h2 class="serif">YouTube <span class="italic">highlights.</span></h2></div><p>Add your YouTube video links in the small list inside this page’s script. Each video will appear here in a matching card.</p></div><div class="video-grid" id="videoGrid" aria-live="polite"></div><p class="note">© Copyright Vibha Makeover All Rights Reserved</p></div></section>
 </main>
 <footer><div class="wrap footer-inner"><div><div class="footer-brand">VIBHA <span>Makeover</span></div><div class="footer-small">Beauty, thoughtfully expressed · Patna, Bihar</div></div><div class="footer-links"><a href="/">Home</a><a href="/gallery.html">Gallery</a><a href="/#booking">Bookings</a><a href="https://www.youtube.com/@vibhamua" target="_blank" rel="noopener noreferrer">@vibhamua</a></div><div class="footer-small">Made with love, for every beautiful moment.</div></div></footer>
 <script>
@@ -49,9 +49,14 @@ const videos=[
     url: "https://youtube.com/shorts/ILBnpgmQ0-8?si=JupitIXt30yzishM"
   },
   {
-    title: "Party Makeup Look",
+    title: "Special Makeup Look",
     description: "An elegant occasion makeup look.",
     url: "https://youtube.com/shorts/T-43PUwGaH0?si=ZfFfEJIjcAY8lsQw"
+  },
+  {
+    title: "Product Review",
+    description: "An elegant occasion makeup look.",
+    url: "https://youtube.com/shorts/4SR_MWyJqeE?si=5KUBjxntpsYrZ_6L"
   }
 ];
 function getYouTubeId(raw){try{const u=new URL(raw);const host=u.hostname.replace(/^www\./,'').replace(/^m\./,'');if(host==='youtu.be')return u.pathname.split('/').filter(Boolean)[0]||null;if(host.endsWith('youtube.com')){if(u.pathname==='/watch')return u.searchParams.get('v');const p=u.pathname.split('/').filter(Boolean);if(['shorts','embed','live'].includes(p[0]))return p[1]||null}}catch(e){}return null}
