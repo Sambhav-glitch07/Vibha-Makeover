@@ -366,6 +366,27 @@ a:hover .arrow-icon{transform:translate(2px,-2px)}
   }
 }
 
+/* Vibha Makeover — Floating Enquiry Card */
+.booking-card {
+  position: relative;
+  z-index: 2;
+  width: min(90%, 620px);
+  margin: -70px auto 40px;
+  padding: clamp(22px, 4vw, 38px);
+  background: #fffaf4;
+  border: 1px solid #e7d8ca;
+  box-shadow: 0 18px 45px rgba(45, 15, 25, 0.14);
+}
+
+/* Mobile refinement */
+@media (max-width: 600px) {
+  .booking-card {
+    width: calc(100% - 32px);
+    margin: -48px auto 32px;
+    padding: 22px 18px;
+  }
+}
+
 </style>
 </head>
 <body>
