@@ -407,7 +407,9 @@ a:hover .arrow-icon{transform:translate(2px,-2px)}
 <nav class="navlinks" id="navLinks" aria-label="Main navigation">
 <div class="nav-group"><button class="nav-mainlink" type="button" aria-expanded="false" aria-controls="servicesMenu">Services <span class="nav-chevron" aria-hidden="true"></span></button><div class="nav-panel" id="servicesMenu"><div class="nav-panel-intro"><span class="eyebrow">THE VIBHA EDIT</span><strong>Beauty for every chapter.</strong><p>Thoughtful artistry, tailored to your occasion.</p><a href="#booking">Enquire about your look</a></div><div class="nav-panel-links"><a href="#services"><b>01</b><span>Bridal makeup<small>Your once-in-a-lifetime look</small></span></a><a href="#services"><b>02</b><span>Engagement<small>Soft, radiant celebration glam</small></span></a><a href="#services"><b>03</b><span>Reception and party<small>Polished looks for every event</small></span></a></div></div></div>
 <div class="nav-group"><button class="nav-mainlink" type="button" aria-expanded="false" aria-controls="portfolioMenu">Portfolio <span class="nav-chevron" aria-hidden="true"></span></button><div class="nav-panel nav-panel-small" id="portfolioMenu"><a href="/gallery.html#bridal">Bridal looks</a><a href="/gallery.html#engagement">Engagement looks</a><a href="/gallery.html#party">Party and reception</a><a href="/gallery.html#details">Makeup details</a><a href="/gallery.html">View all photographs</a></div></div>
-<a href="/gallery.html">Gallery</a><a href="#about">Our story</a><a class="nav-ai-trigger" href="/beautyai.html">Beauty AI</a><a href="#booking">Contact</a>
+<a href="/gallery.html">Gallery</a><a href="#about">Our story</a><a class="nav-ai-trigger" href="/beautyai.html">Beauty AI</a><a href="#booking">Contact</a><a href="/terms.html" class="terms-link">
+  Terms &amp; Conditions
+</a>
 <div class="mobile-nav-note"><span>PERSONAL · TIMELESS · BEAUTIFULLY YOU</span><a href="#booking">Enquire about your date</a></div>
 </nav>
 <a class="nav-cta" href="#booking">Enquire about your date </a>
@@ -522,7 +524,7 @@ a:hover .arrow-icon{transform:translate(2px,-2px)}
 <option>Manicures and Pedicures</option><option>Facials and Skin Treatments</option><option>Waxing and Threading</option>
 </optgroup>
 </select></div>
-  
+
 <div class="field"><label for="date">Event date</label><input id="date" name="date" type="date"></div>
 <div class="field"><label for="message">Anything else you'd like us to know? (optional)</label><textarea id="message" name="message" maxlength="1000" placeholder="Venue, preferred look, or questions…"></textarea></div>
 <input type="text" name="company_website" id="company_website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px">
@@ -551,6 +553,9 @@ a:hover .arrow-icon{transform:translate(2px,-2px)}
 </main>
 <footer><div class="wrap footer-inner"><div><div class="footer-brand">VIBHA <span class="italic">Makeover</span></div><div class="footer-small">Beauty, thoughtfully expressed · Patna, Bihar</div></div><div class="footer-links"><a href="#services">Services</a><a href="/gallery.html">Gallery</a>
 <a href="/youtube.html">YouTube Highlights</a>
+<a href="/terms.html" class="terms-link">
+  Terms &amp; Conditions
+</a>  
 <a href="#about">Our story</a><a class="instagram-link" href="https://www.instagram.com/makeupby_vibha_mua?mdxt=a2c2cm1mZ2xheGk0" target="_blank" rel="noopener noreferrer" aria-label="Visit Makeup by Vibha on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span>Makeup_by_Vibha_Mua</span></a></div><div class="footer-small">Made with love, for every beautiful moment.</div></div></footer>
 
 
@@ -598,7 +603,7 @@ document.getElementById('bookingForm').addEventListener('submit', async e => {
  const status=document.getElementById('formStatus');
  const data=new FormData(form);
  if (data.get('company_website')) return;
- 
+
 const mobile = String(data.get('phone') || '').replace(/\D/g, '');
 
 if (!/^[6-9]\d{9}$/.test(mobile)) {
